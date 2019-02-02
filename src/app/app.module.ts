@@ -1,3 +1,4 @@
+import { HttpInterceptorModule } from './security/http-interceptor';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -27,7 +28,8 @@ import { LoginComponent } from './security/login.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpInterceptorModule
   ],
   providers: [ProductService, CategoryService,SecurityService],
   bootstrap: [AppComponent]
